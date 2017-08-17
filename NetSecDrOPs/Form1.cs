@@ -16,5 +16,18 @@ namespace NetSecDrOPs
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox5.Text = folderBrowserDialog1.SelectedPath;
+            }
+        }
     }
 }
